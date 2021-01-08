@@ -7,6 +7,7 @@ phases:
     commands:
       - echo $STAGE
       - echo $MY_VAR
+      - chmod +x ./gradlew
       - ./gradlew test
   build:
     commands:
