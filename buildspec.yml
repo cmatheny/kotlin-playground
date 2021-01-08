@@ -5,8 +5,8 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      - printenv
-      - ls -l gradle
+      - echo $STAGE
+      - echo $MY_VAR
       - ./gradlew test
   build:
     commands:
